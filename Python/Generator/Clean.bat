@@ -1,0 +1,1 @@
+rmdir main /S /Q >> log.txt

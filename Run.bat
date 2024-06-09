@@ -1,0 +1,2 @@
+cd MDK
+.\runclient.bat

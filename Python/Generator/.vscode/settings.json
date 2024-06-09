@@ -1,0 +1,16 @@
+{ 
+    "problems.decorations.enabled": false,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/.vscode": true,
+        "**/__pycache__": true,
+        "**/unused": true,
+        "**/.gitignore": true
+    },
+    "explorerExclude.backup": null
+}

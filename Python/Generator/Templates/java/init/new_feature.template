@@ -1,0 +1,2 @@
+public static final RegistryObject<Feature<?>> ¤ID¤ = register("¤id¤", ¤Id¤Feature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, ¤Id¤Feature.GENERATE_BIOMES, ¤Id¤Feature::placedFeature));

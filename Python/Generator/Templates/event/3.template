@@ -1,0 +1,20 @@
+@Override
+public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+	super.inventoryTick(itemstack, world, entity, slot, selected);
+
+	if(entity==null || !(entity instanceof Entity) )
+		return;
+
+    LevelAccessor _world = entity.level;
+	double _x = entity.getX();
+	double _y = entity.getY();
+	double _z = entity.getZ();
+	LivingEntity _entity = (LivingEntity) entity;
+	LivingEntity _sourceentity = null;
+	Direction _direction = null;
+
+	if (selected){
+    	¤>procedure¤
+    }
+
+}

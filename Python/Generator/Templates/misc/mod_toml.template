@@ -1,0 +1,22 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="Academic Free License v3.0"
+
+[[mods]]
+modId="generand"
+version="1.0.0"
+displayName="generand"
+credits="This mod was created totaly randomly !"
+displayURL="https://discord.gg/ca3vCUwY5Q"
+authors="Axel#4843"
+
+[[dependencies.generand]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "generand:blocks/testoreblock",
+    "particle": "generand:blocks/testoreblock"
+  }
+}

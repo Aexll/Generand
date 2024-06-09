@@ -1,0 +1,156 @@
+
+
+
+
+
+
+
+@Override
+public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
+	InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
+	ItemStack itemstack = ar.getObject();
+	double x = entity.getX();
+	double y = entity.getY();
+	double z = entity.getZ();
+    LivingEntity sourceentity = null;
+
+	ExplodeProcedure.execute(world, x, y, z, entity, sourceentity);
+	return ar;
+}
+
+@Override
+public InteractionResult useOn(UseOnContext context) {
+    InteractionResult retval = super.useOn(context);
+
+    Level world = context.getLevel();
+	double x = context.getClickedPos().getX();
+	double y = context.getClickedPos().getY();
+	double z = context.getClickedPos().getZ();
+    LivingEntity entity = null;
+    LivingEntity sourceentity = null;
+    Direction direction = null;
+
+    ExplodeProcedure.execute(, , , ,
+            context.getClickedFace());
+
+    ExplodeProcedure.execute(world, x, y, z, entity, sourceentity, direction);
+
+    return retval;
+}
+
+
+
+
+@Override
+public ItemStack finishUsingItem(ItemStack itemstack, Level world, LivingEntity entity) {
+	ItemStack retval = super.finishUsingItem(itemstack, world, entity);
+	double x = entity.getX();
+	double y = entity.getY();
+	double z = entity.getZ();
+	ExplodeProcedure.execute(world, x, y, z);
+	return retval;
+}
+
+
+
+
+
+
+@Override
+public InteractionResult useOn(UseOnContext context) {
+	InteractionResult retval = super.useOn(context);
+	double x = context.getClickedPos().getX();
+	double y = context.getClickedPos().getY();
+	double z = context.getClickedPos().getZ();
+    Level world = context.getLevel();
+
+	ExplodeProcedure.execute(world, x, y, z);
+	return retval;
+}
+
+
+
+
+
+
+@Override
+public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
+	boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
+
+    Level world = entity.level;
+	double x = entity.getX();
+	double y = entity.getY();
+	double z = entity.getZ();
+
+	ExplodeProcedure.execute(world, x, y, z);
+	return retval;
+}
+
+
+
+
+
+
+
+
+@Override
+public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
+	boolean retval = super.onEntitySwing(itemstack, entity);
+
+    Level world = entity.level;
+	double x = entity.getX();
+	double y = entity.getY();
+	double z = entity.getZ();
+
+	ExplodeProcedure.execute(world, x, y, z);
+    
+	return retval;
+}
+
+@Override
+public void onCraftedBy(ItemStack itemstack, Level world, Player entity) {
+	super.onCraftedBy(itemstack, world, entity);
+
+	double x = entity.getX();
+	double y = entity.getY();
+	double z = entity.getZ();
+
+	ExplodeProcedure.execute(world, x, y, z);
+}
+
+@Override
+public void releaseUsing(ItemStack itemstack, Level world, LivingEntity entity, int time) {
+    
+	double x = entity.getX();
+	double y = entity.getY();
+	double z = entity.getZ();
+    
+	ExplodeProcedure.execute(world, x, y, z);
+}
+
+@Override
+public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+	super.inventoryTick(itemstack, world, entity, slot, selected);
+    
+	double x = entity.getX();
+	double y = entity.getY();
+	double z = entity.getZ();
+
+	if (selected){
+	    ExplodeProcedure.execute(world, x, y, z);
+    }
+
+	ExplodeProcedure.execute(world, x, y, z);
+}
+
+@Override
+public boolean onDroppedByPlayer(ItemStack itemstack, Player entity) {
+
+    Level world = entity.level;
+	double x = entity.getX();
+	double y = entity.getY();
+	double z = entity.getZ();
+    
+	ExplodeProcedure.execute(world, x, y, z);
+	return true;
+}

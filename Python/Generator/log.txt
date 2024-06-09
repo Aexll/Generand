@@ -1,0 +1,22 @@
+Upgrading pip 
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: pip in c:\users\lavigne.axel\appdata\roaming\python\python38\site-packages (22.1.1)
+' ' 
+Installing Pillow 
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: Pillow in c:\users\lavigne.axel\appdata\roaming\python\python38\site-packages (9.1.0)
+' ' 
+Installing Numpy 
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: Numpy in c:\users\lavigne.axel\appdata\roaming\python\python38\site-packages (1.22.3)
+' ' 
+Installing OpenCV2 
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: opencv-python in c:\users\lavigne.axel\appdata\roaming\python\python38\site-packages (4.5.5.64)
+Requirement already satisfied: numpy>=1.17.3 in c:\users\lavigne.axel\appdata\roaming\python\python38\site-packages (from opencv-python) (1.22.3)
+' ' 
+Installing Pyimgui 
+' ' 
+Installing Matplotlib 
+' ' 
+Installing dearpygui 

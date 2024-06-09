@@ -1,0 +1,39 @@
+
+package net.mcreator.generand.item;
+
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.Item;
+
+import net.mcreator.generand.init.GenerandModTabs;
+
+public class TestToolItem extends PickaxeItem {
+	public TestToolItem() {
+		super(new Tier() {
+			public int getUses() {
+				return ¤tool_uses¤;
+			}
+
+			public float getSpeed() {
+				return ¤tool_speed¤f; // 4
+			}
+
+			public float getAttackDamageBonus() {
+				return ¤tool_damage¤f; // 2
+			}
+
+			public int getLevel() {
+				return ¤tool_level¤; // 1
+			}
+
+			public int getEnchantmentValue() {
+				return ¤tool_enchant¤; // 2
+			}
+
+			public Ingredient getRepairIngredient() {
+				return Ingredient.EMPTY;
+			}
+		}, 1, -3f, new Item.Properties().tab(GenerandModTabs.TAB_GENERAND));
+	}
+}

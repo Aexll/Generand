@@ -1,0 +1,13 @@
+package generand.init;
+
+import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.DeferredRegister;
+import generand.GenerandMod;
+¤>import¤
+import net.minecraft.world.level.block.Block;
+
+public class GenerandModBlocks {
+	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, GenerandMod.MODID);
+	¤>java_init_new_block¤
+}

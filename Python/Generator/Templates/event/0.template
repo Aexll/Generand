@@ -1,0 +1,15 @@
+@Override
+public boolean onDroppedByPlayer(ItemStack itemstack, Player entity) {
+	
+	LevelAccessor _world = entity.level;
+	double _x = entity.getX();
+	double _y = entity.getY();
+	double _z = entity.getZ();
+	LivingEntity _entity = entity;
+	LivingEntity _sourceentity = null;
+	Direction _direction = null;
+
+	¤>procedure¤
+	
+	return true;
+}

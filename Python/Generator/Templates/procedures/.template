@@ -1,0 +1,25 @@
+package generand.procedures;
+
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.core.Direction;
+
+
+
+
+public class ¤classname¤ {
+	public static void execute(
+		LevelAccessor world,
+		double x,
+		double y,
+		double z,
+		LivingEntity entity,
+		LivingEntity sourceentity,
+		Direction direction
+		) {
+
+		/* code here*/
+
+		
+	}
+}

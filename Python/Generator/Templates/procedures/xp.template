@@ -1,0 +1,25 @@
+package generand.procedures;
+
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.core.Direction;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.ExperienceOrb;
+
+public class ¤classname¤ {
+	public static void execute(
+		LevelAccessor world,
+		double x,
+		double y,
+		double z,
+		LivingEntity entity,
+		LivingEntity sourceentity,
+		Direction direction
+		) {
+
+		if (world instanceof Level _level && !_level.isClientSide())
+			_level.addFreshEntity(new ExperienceOrb(_level, x, y, z, 1));
+		
+	}
+}

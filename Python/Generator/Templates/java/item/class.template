@@ -1,0 +1,45 @@
+
+package generand.item;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.UseAnim;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.entity.player.Player;
+¤>import¤
+
+import generand.init.GenerandModTabs;
+
+
+import java.util.List;
+
+public class ¤Id¤Item extends Item {
+	public ¤Id¤Item() {
+		super(new Item.Properties().tab(¤tab¤).stacksTo(¤stack¤).rarity(Rarity.COMMON)
+		¤food¤
+		);
+
+	}
+
+	@Override
+	public UseAnim getUseAnimation(ItemStack itemstack) {
+		return UseAnim.EAT;
+	}
+
+	@Override
+	public int getUseDuration(ItemStack itemstack) {
+		return ¤use_speed¤;
+	}
+
+	@Override
+	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, world, list, flag);
+		list.add(new TextComponent("this is a very rare item !"));
+	}
+
+	¤>procedures¤
+}

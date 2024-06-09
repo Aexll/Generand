@@ -1,0 +1,37 @@
+package generand.procedures;
+
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.core.Direction;
+
+
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.entity.LightningBolt;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.entity.EntityType;
+
+
+
+
+
+public class ¤classname¤ {
+	public static void execute(
+		LevelAccessor world,
+		double x,
+		double y,
+		double z,
+		LivingEntity entity,
+		LivingEntity sourceentity,
+		Direction direction
+		) {
+
+		if (world instanceof ServerLevel _level) {
+			LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
+			entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(x, y, z)));
+			entityToSpawn.setVisualOnly(false);
+			_level.addFreshEntity(entityToSpawn);
+		}
+	
+	}
+}

@@ -1,0 +1,4 @@
+/main
+**.pyc
+**/__pycache__/
+**/opencv

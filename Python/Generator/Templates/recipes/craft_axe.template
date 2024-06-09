@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01 ",
+    "24 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "¤ingredient¤"
+    },
+    "1": {
+      "item": "¤ingredient¤"
+    },
+    "2": {
+      "item": "¤ingredient¤"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "¤result¤",
+    "count": ¤count¤
+  }
+}

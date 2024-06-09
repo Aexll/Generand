@@ -1,0 +1,10 @@
+{
+  "group": "raw_to_ore",
+  "type": "minecraft:smelting",
+  "experience": ¤smelt_xp¤,
+  "cookingtime": ¤smelt_time¤,
+  "ingredient": {
+    "item": "¤ingredient¤"
+  },
+  "result": "¤result¤"
+}

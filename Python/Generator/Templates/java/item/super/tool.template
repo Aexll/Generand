@@ -1,0 +1,26 @@
+super(new Tier() {
+			public int getUses() {
+				return ¤tool_uses¤;
+			}
+
+			public float getSpeed() {
+				return ¤tool_speed¤f;
+			}
+
+			public float getAttackDamageBonus() {
+				return ¤tool_damages¤f;
+			}
+
+			public int getLevel() {
+				return ¤tool_level¤;
+			}
+
+			public int getEnchantmentValue() {
+				return ¤tool_enchant¤;
+			}
+
+			public Ingredient getRepairIngredient() {
+				return ¤repair_ingredient¤//Ingredient.EMPTY;
+				// return Ingredient.of(new ItemStack(GenerandModItems.TESTITEM.get()));
+			}
+		}, 1, -3f, ¤properties¤);
