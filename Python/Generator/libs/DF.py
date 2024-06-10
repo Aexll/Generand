@@ -7,8 +7,8 @@ Dependency File
 
 manage the dependency of files
 
-*  '+=' add action
-*  '*=' add dependancy
+*  '+=' add an action
+*  '*=' add a dependency
 *  '|=' set default template copy-from
 
 
