@@ -34,6 +34,55 @@ how does it work ??
 
 
 
+"""
+
+How ??
+
+the point of this program is to automatise creation of a lot of files that have custom content that have some sort of cross referencing
+
+before creating the file in the directory, we create a abstract class of file called MF (minecraft file)
+
+MF has some content, and some operations to modify it, these operations are called actions
+it also has a Build function to create the real file
+
+Since there is a build order to be taken into account, instead of have some unclear dependencies between files, there is a class called:
+DF (dependency files)
+
+DF contains a MF and some other DF that are the dependencies, so at build time we can build everything in the right order
+
+
+since creating some minecraft moded objects requires a lot of files to be created, to avoid having redundant codes there is a class called:
+
+MCOBJ (minecraft object)
+MCOBJ is the parent of all minecraft generated objects, such as some blocks or tools
+
+since creating a block isnt the same as creating a tool, some childrens class of MCOBJ are created:
+MCOBJ_ITEM
+    MCOBJ_TOOL
+MCOBJ_BLOCK
+
+
+and since we often not only need one tool, but a set of all the tools that can be made with one kind of ore for example,
+there is another class for that wich is called:
+Montage
+
+Montages contains a list of item
+Some children classes of Montage are created, and contains the some logic to generate multiple Objects that shares similarities
+it can also contains files for some recipes for example
+
+
+
+
+
+
+Syntax
+
+DF(PATH) # gets the reference of a file, by default no files exist, it will create a reference
+# if the same file is get it will get the previous reference
+
+
+"""
+
 
 
 
@@ -144,7 +193,9 @@ def Gen(**kwargs):
     
 
 
-
+    """
+    Generating every objects in the objs list
+    """
     for i in objs:
         i()
 

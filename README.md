@@ -4,7 +4,7 @@
 
 `Minecraft version: 1.18.3`
 
-
+![img](./.img/img1.png)
 
 ## how to use :
 
@@ -24,5 +24,21 @@ to generate the mod as .jar file, run :
 
 ```mermaid
   graph TD;
-      Generation-->Building;
+      Play.bat-->Gen.bat;
+      Play.bat-->Run.bat;
+      Play.bat-->Build.bat;
+      Gen.bat-->Generation;
+      Run.bat-->PlayGame;
+      Build.bat-->Compilation;
 ```
+
+
+
+**Directories** 
+* `Build` Contains the mod as a .jar 
+* `MDK` Contains the tools to build the mod and test it
+* `Python` Contains the mod generator
+
+**Inside the Python directory**
+* `Generator` Contains all the logic
+* `src` Folder where the uncompiled mod files will be generated 

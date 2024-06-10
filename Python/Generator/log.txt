@@ -1,19 +1,31 @@
 Upgrading pip 
-Defaulting to user installation because normal site-packages is not writeable
-Requirement already satisfied: pip in c:\users\lavigne.axel\appdata\roaming\python\python38\site-packages (22.1.1)
+Requirement already satisfied: pip in c:\users\axel\anaconda3\lib\site-packages (23.2.1)
+Collecting pip
+  Obtaining dependency information for pip from https://files.pythonhosted.org/packages/8a/6a/19e9fe04fca059ccf770861c7d5721ab4c2aebc539889e97c7977528a53b/pip-24.0-py3-none-any.whl.metadata
+  Downloading pip-24.0-py3-none-any.whl.metadata (3.6 kB)
+Downloading pip-24.0-py3-none-any.whl (2.1 MB)
+   ---------------------------------------- 2.1/2.1 MB 9.0 MB/s eta 0:00:00
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 23.2.1
+    Uninstalling pip-23.2.1:
+      Successfully uninstalled pip-23.2.1
+Successfully installed pip-24.0
 ' ' 
 Installing Pillow 
-Defaulting to user installation because normal site-packages is not writeable
-Requirement already satisfied: Pillow in c:\users\lavigne.axel\appdata\roaming\python\python38\site-packages (9.1.0)
+Requirement already satisfied: Pillow in c:\users\axel\anaconda3\lib\site-packages (9.4.0)
 ' ' 
 Installing Numpy 
-Defaulting to user installation because normal site-packages is not writeable
-Requirement already satisfied: Numpy in c:\users\lavigne.axel\appdata\roaming\python\python38\site-packages (1.22.3)
+Requirement already satisfied: Numpy in c:\users\axel\anaconda3\lib\site-packages (1.24.3)
 ' ' 
 Installing OpenCV2 
-Defaulting to user installation because normal site-packages is not writeable
-Requirement already satisfied: opencv-python in c:\users\lavigne.axel\appdata\roaming\python\python38\site-packages (4.5.5.64)
-Requirement already satisfied: numpy>=1.17.3 in c:\users\lavigne.axel\appdata\roaming\python\python38\site-packages (from opencv-python) (1.22.3)
+Collecting opencv-python
+  Downloading opencv_python-4.10.0.82-cp37-abi3-win_amd64.whl.metadata (20 kB)
+Requirement already satisfied: numpy>=1.21.2 in c:\users\axel\anaconda3\lib\site-packages (from opencv-python) (1.24.3)
+Downloading opencv_python-4.10.0.82-cp37-abi3-win_amd64.whl (38.8 MB)
+   ---------------------------------------- 38.8/38.8 MB 40.9 MB/s eta 0:00:00
+Installing collected packages: opencv-python
+Successfully installed opencv-python-4.10.0.82
 ' ' 
 Installing Pyimgui 
 ' ' 
